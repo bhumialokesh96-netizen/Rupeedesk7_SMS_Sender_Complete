@@ -1,0 +1,31 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.rupeedesk7.smsapp'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.rupeedesk7.smsapp"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.work:work-runtime-ktx:2.8.1'
+    implementation 'com.google.firebase:firebase-firestore:24.10.0'
+    implementation 'com.google.android.gms:play-services-tasks:18.0.2'
+}
